@@ -9,7 +9,7 @@ before_script:
   - sudo service mysql restart 
 script:
   - mvn package
-  - mvn clean heroku:deploy-war
+  - mvn clean account:deploy-war
 deploy:
   provider: heroku
   api_key:
