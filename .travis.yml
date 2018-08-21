@@ -9,7 +9,7 @@ before_script:
   - sudo service mysql restart 
 script:
   - mvn package
-  - mvn jetty:run
+  - mvn jetty:run&
 after_script:
   - curl http://localhost:8080
 deploy:
